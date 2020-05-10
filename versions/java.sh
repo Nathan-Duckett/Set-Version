@@ -7,7 +7,8 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-export JAVA_HOME="/usr/lib/jvm/java-$1-openjdk-amd64"
-export PATH="$PATH:JAVA_HOME/bin"
+JAVA_HOME="/usr/lib/jvm/java-$1-openjdk-amd64"
+export JAVA_HOME
+export PATH="$PATH:$JAVA_HOME/bin"
 
 echo "Java version successfully set to $1"
