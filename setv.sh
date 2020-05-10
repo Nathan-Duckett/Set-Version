@@ -4,7 +4,7 @@
 
 if [ $# -ne 2 ]; then
     echo "Invalid arguments used: Expects setv <application_name> <application_version>"
-    exit 1
+    return
 fi
 
-./versions/$1.sh $2
+. ./versions/$1.sh $2
