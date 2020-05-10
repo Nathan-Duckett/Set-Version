@@ -7,4 +7,4 @@ if [ $# -ne 2 ]; then
     return
 fi
 
-. ./versions/$1.sh $2
+. ./linux-versions/$1.sh $2
